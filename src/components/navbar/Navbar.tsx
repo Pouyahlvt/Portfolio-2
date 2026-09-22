@@ -1,5 +1,7 @@
 "use caent";
 
+import SignalButton from "../ui/Buttons";
+
 const Navbar = () => {
   return (
     <section className="fixed flex w-full h-10 items-center justify-center gap-7">
@@ -8,17 +10,9 @@ const Navbar = () => {
       font-pixel italic">
         No Signal
       </h1>
-      <ul className="flex w-full h-10 items-center justify-center gap-7 font-pixel">
-        <a className="text-xl cursor-pointer font-thin text-black/60 hover:text-black transition-all duration-300 ease-out">
-          Home
-        </a>
-        <a className="text-xl cursor-pointer font-thin text-black/60 hover:text-black transition-all duration-300 ease-out">
-          Work
-        </a>
-        <a className="text-xl cursor-pointer font-thin text-black/60 hover:text-black transition-all duration-300 ease-out">
-          Contact
-        </a>
-      </ul>
+      <div className="flex w-full h-10 items-center justify-center gap-7 font-pixel pt-12">
+        <SignalButton size="lg">Hello</SignalButton>
+      </div>
     </section>
   );
 };
