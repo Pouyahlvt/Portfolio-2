@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Geist_Pixel } from "next/font/google";
+import { VT323 } from "next/font/google";
 import "./globals.css";
 
-const pixel = Geist_Pixel({
-  variable: "--font-pixel",
+const vt323 = VT323({
+  variable: "--font-vt323",
   subsets: ["latin"],
-  adjustFontFallback: false,
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${pixel.variable}  h-full antialiased`}>
+    <html lang="en" className={`${vt323.variable}  h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
