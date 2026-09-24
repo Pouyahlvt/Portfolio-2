@@ -18,7 +18,7 @@ export default function ScrambleText({
 
   const handleHover = () => {
     if (!ref.current) return;
-    scramble(ref.current, text);
+    scramble(ref.current, text, { duration: 0.5, speed: 0.5 });
   };
 
   return (

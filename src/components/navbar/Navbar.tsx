@@ -1,6 +1,5 @@
 "use caent";
 
-import SignalButton from "../ui/Buttons";
 import ScrambleButton from "../ui/scrambleButton";
 
 const Navbar = () => {

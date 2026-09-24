@@ -17,7 +17,7 @@ const Home = () => {
       <main className="fixed inset-0 py-12 px-20 ">
         {/* Scrollable inner frame */}
         <div className="w-full h-full overflow-y-auto scrollbar-none">
-          <Navbar />
+          {/* <Navbar /> */}
           <Hero />
         </div>
       </main>
